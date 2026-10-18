@@ -1,3 +1,60 @@
+// TYPE CONVERSION
+// Type conversion means converting a value from one data type to another.
+
+// 1. STRING TO NUMBER
+
+let score = "33"; // String: the value is inside quotes.
+
+console.log(typeof score); // string
+
+// Number() converts a value into a number.
+let valueInNumber = Number(score);
+
+console.log(typeof valueInNumber); // number
+
+// Important conversion examples:
+// "33"    => 33       (valid numeric string)
+// "33abc" => NaN      (cannot be converted to a valid number)
+// true    => 1
+// false   => 0
+// null    => 0
+// undefined => NaN
+// ""      => 0        (empty string converts to zero)
+
+
+// 2. CONVERTING A VALUE TO BOOLEAN
+
+let isLoggedIn = 1;
+
+// Boolean() converts a value into true or false.
+let booleanIsLoggedIn = Boolean(isLoggedIn);
+
+console.log(booleanIsLoggedIn); // true
+
+// Important conversion examples:
+// 1       => true
+// 0       => false
+// ""      => false
+// "aman"  => true
+// "0"     => true (non-empty string)
+// null    => false
+// undefined => false
+
+
+// 3. NUMBER TO STRING
+
+let someNumber = 33;
+
+// String() converts a value into a string.
+let stringNumber = String(someNumber);
+
+console.log(stringNumber);       // "33"
+console.log(typeof stringNumber); // string
+
+
+
+
+
 // ==========================================
 // OPERATIONS IN JAVASCRIPT
 // ==========================================
