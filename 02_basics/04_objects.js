@@ -110,3 +110,28 @@ console.log(tinderUser.hasOwnProperty("isLoggedIn"));
 
 console.log(tinderUser.hasOwnProperty("age"));
 // false
+
+
+
+
+
+// Object Destructuring
+
+const course = {
+    coursename: "JavaScript",
+    price: "1000",
+    courseInstructor: "aman"
+};
+
+// Extracting a property into a variable
+const { courseInstructor } = course;
+
+console.log(courseInstructor);
+// Output: aman
+
+
+// Renaming a property while destructuring
+const { courseInstructor: instructor } = course;
+
+console.log(instructor);
+// Output: aman
