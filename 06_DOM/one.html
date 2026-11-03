@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM Learning</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+    
+    <!--
+    - Select element using ID
+    document.getElementById("title");
+
+    - Select element using class
+    document.getElementsByClassName("heading");
+
+    - Select element using CSS selector
+    document.querySelector("#title");
+
+    - Select paragraph
+    document.querySelector("p"); 
+    --> 
+    
+
+    <script>
+        const title = document.getElementById("title");
+
+        console.log(title);
+        console.log(title.innerHTML);
+        console.log(title.textContent);
+    </script>
+
+
+
+</body>
+</html>
