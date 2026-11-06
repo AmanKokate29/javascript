@@ -1,0 +1,109 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #212121;
+color: #ffffff;
+}
+
+/* Navigation */
+nav {
+display: flex;
+gap: 20px;
+padding: 15px 30px;
+background-color: #333333;
+border-bottom: 2px solid #555555;
+}
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+font-size: 16px;
+}
+
+nav a {
+color: orange;
+}
+
+/* Main container */
+.canvas {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 80vh;
+padding: 30px 15px;
+text-align: center;
+}
+
+.canvas h1 {
+font-size: 32px;
+margin-bottom: 30px;
+}
+
+/* Color buttons */
+.button {
+display: inline-block;
+width: 100px;
+height: 100px;
+margin: 10px;
+border: 3px solid #ffffff;
+border-radius: 10px;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+.button {
+transform: scale(1.1);
+}
+
+#grey {
+background-color: grey;
+}
+
+#white {
+background-color: white;
+}
+
+#blue {
+background-color: blue;
+}
+
+#yellow {
+background-color: yellow;
+}
+
+/* Instructions */
+.canvas h2 {
+font-size: 20px;
+line-height: 1.6;
+margin-top: 30px;
+}
+
+.canvas h2 span {
+display: block;
+font-size: 16px;
+font-weight: normal;
+color: #cccccc;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+.canvas h1 {
+font-size: 25px;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+}
+
+.canvas h2 {
+    font-size: 17px;
+}
+
+}
