@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <!--<button onclick="handleButtonClick()">Click Me</button>-->
+
+    <h1 id="name-block">I Am Batman</h1>
+
+
+    <button id="clickButton">Change color</button>
+
+
+    <script>
+        // function handleButtonClick (){
+        //     console.log("That Button is Clicked");
+        //     alert("Hey I am Clicked");
+        // }
+
+       const el = document.getElementById("clickButton");
+       const name = document.getElementById("name-block")
+       
+       el.addEventListener("click", function () {
+        console.log("Hey I am Clicked");
+        name.style.color = 'red' ;
+       });
+
+       
+
+    </script>
+</body>
+</html>
